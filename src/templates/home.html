@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home | Trikyas</title>
-  </head>
+{% extends 'base.html' %}
 
-<!--
-____________________________
-( Don't get sucked in by comments )
-( they can be terribly misleading.   )
-( Debug only the code.                  )
-___________________________
-       o   ^__^
-        o  (oo) \_______
-           (__) \               )\\
-                   | | ––ww |   \\
-                  | |         | |     *
+{% block content %}
 
-
-
- -->
-
-  <body>
-    {{ request.user }}
-    <h1>Home Page</h1>
-  </body>
-</html>
+{{ request.user }}
+<h1>Home Page!</h1>
+{% endblock %}
