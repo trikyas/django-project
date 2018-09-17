@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from pages.views import home_view, about_view, portfolio_view, social_view, contact_view
+from pages.views import home_view, about_view, portfolio_view, social_view, contact_view, account_view
 
 urlpatterns = [
 # home page
@@ -34,6 +34,9 @@ urlpatterns = [
 # contact page
     path('', contact_view, name='contact'),
     path('contact/', contact_view, name='contact'),
+# account page
+    path('', account_view, name='account'),
+    path('account/', account_view, name='account'),
 #admin page
     path('admin/', admin.site.urls),
 ]
